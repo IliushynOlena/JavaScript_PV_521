@@ -4,14 +4,15 @@ console.log("Hello from Base.js");
 let empty;              //undefined
 let nullObject = null;  //null 
 
-let number = 120.33;   // number
+let number = 120.33;           // number
 let email = "myemail@gmail.com"//string
-let flag = true;
-let summa = function(a,b){
+let flag = true;               //boolean
+let summa = function(a,b)      //function
+{
     console.log(`${a} + ${b} = ${a+b}`);
 }
 //""  ''  ``
-let array = [1,2,3,4, "green", false,["world","tree"],summa]
+let array = [1,2,3,4, "green", false,["world","tree"],summa]//object
 
 console.log(`Number : ${number}. Type : ${typeof(number)}`)
 //Shift+Alt+ arrow down
