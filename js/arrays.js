@@ -27,7 +27,7 @@ for (let i = 0; i < array.length; i++) {
 console.log("-------------------------------------");
 
 console.log(`[${0}] - ${array[0]}`) ; 
-//array[40] = 44; // not allow danger
+//array[44] = 44; // not allow danger
 console.log(`[${0}] - ${array[0]}`) ; 
 for (let i = 0; i < array.length; i++) {
    console.log(`[${i}] - ${array[i]}`) ;    
@@ -39,7 +39,6 @@ console.log(`Lenght : ${array.length}`);
 array.forEach((elem, index)=>{
     console.log(`Element [${index}] : ${elem}`)
 })
-
 console.log("Forin - get all indexes with elements");
 for (const key in array) {
     console.log(key);      
@@ -70,7 +69,7 @@ array.unshift(55);
 console.log("Original array : " + array);
 
 console.log("Index elementa -88 : ", array.indexOf(-88));
-console.log("Index elementa -88 : ", array.lastIndexOf(85));
+console.log("Index elementa 85 : ", array.lastIndexOf(85));
 
 
 console.log("Find : ", array.find((elem)=>elem > 0));
