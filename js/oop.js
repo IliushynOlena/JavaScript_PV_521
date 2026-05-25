@@ -75,6 +75,7 @@ class PoliceCar extends Car{
     {
         super.print();
         console.log("Volume : " + 500 + "dB")
+        document.write(`<p>Hello world ${this.model}<p/>`);
     }
 
 };
@@ -84,3 +85,4 @@ const police  = new PoliceCar("Toyota Prius",2018,"white",220,500);
 police.paint("grey");
 police.beep();
 police.print();
+
