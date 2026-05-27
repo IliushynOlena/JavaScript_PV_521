@@ -86,3 +86,10 @@ police.paint("grey");
 police.beep();
 police.print();
 
+console.log("------------Print ----------------");
+const cars = [new Car(), new PoliceCar()];
+//.forEach( c=> c.print());
+
+console.log("Виклик батьківського методу через дочірній клас")
+Car.prototype.print.call(police);
+
