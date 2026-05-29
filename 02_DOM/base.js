@@ -1,9 +1,11 @@
 // document.write("<h2>Hello world!</h2>");
 
 
+
 const tableBody = document.getElementById('table-body');
 const createBtn = document.getElementById('createBtn');
 const deleteBtn = document.getElementById('delete-btn');
+
 
 let products = [];
 
@@ -50,4 +52,32 @@ function getProductFromForm() {
         description: descInput.value,
         price: +priceInput.value
     }
+}
+
+const themeButton = document.getElementById('theme-btn');
+const nav = document.getElementById('navbar');
+const navCol1 = document.getElementById('navbarColor01');
+
+themeButton.onclick = () =>{
+    console.log("My button clicked");
+
+   if (themeButton.innerHTML === "Primary Theme") {
+        themeButton.innerHTML = "Light Theme";
+       
+        nav.classList.remove("bg-primary");
+        nav.classList.add("bg-light");
+       
+        nav.setAttribute("data-bs-theme", "light");
+       
+    } else {
+        themeButton.innerHTML = "Primary Theme";
+       
+        nav.classList.remove("bg-light");
+        nav.classList.add("bg-primary");
+       
+        nav.setAttribute("data-bs-theme", "dark");
+    }
+ 
+        
+   
 }

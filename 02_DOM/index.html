@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        nav{
+            transition: all .3s;
+        }
+    </style>
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
@@ -75,6 +82,7 @@
                 </div>
                 <button id="createBtn" type="button" class="btn btn-primary mt-4">Create</button>
                 <button id="delete-btn" type="button" class="btn btn-danger mt-4">Delete all</button>
+                <button id="theme-btn" type="button" class="btn btn-primary mt-4">Primary Theme</button>
             </fieldset>
         </form>
 
@@ -88,7 +96,7 @@
                     <th scope="col">Price</th>
                 </tr>
             </thead>
-            <tbody id="table-body">               
+            <tbody id="table-body">
                 <tr class="table-dark">
                     <th scope="row">1</th>
                     <td>Nissan Leaf</td>
@@ -101,10 +109,19 @@
                     <td>Some text</td>
                     <td>1000 grn</td>
                 </tr>
-                
+
             </tbody>
         </table>
+
+        
+  </div>
+</div>
+                  
+            </li>
+        </ul>
     </div>
+
+
     <script src="./base.js"></script>
 
 
